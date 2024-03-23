@@ -101,7 +101,7 @@ const Sidebar = () => {
                 ml="15px"
               >
                 <Typography variant="h3" color={colors.grey[100]}>
-                  ADMINIS
+                  ADMIN
                 </Typography>
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
                   <MenuOutlinedIcon />
@@ -117,7 +117,7 @@ const Sidebar = () => {
                      alt="profile-user"
                      width="100px"   
                      height="100px"
-                     src={`http://localhost:8000/${JSON.parse(sessionStorage.getItem('user')).image}`} 
+                     src={`http://localhost:8000/${JSON.parse(sessionStorage?.getItem('user'))?.image}`} 
                      style={{ cursor: "pointer", borderRadius: "50%"}}
                     />
                    </Box>
@@ -128,7 +128,7 @@ const Sidebar = () => {
                     fontWeight="bold" 
                     sx={{ m: "10px 0 0 0"}}
                     >
-                    {JSON.parse(sessionStorage.getItem('user')).name}
+                    {JSON.parse(sessionStorage?.getItem('user'))?.name}
                     </Typography>                    
                     <Typography variant="h6" color="#EEA47F">Admin</Typography>
                    </Box> 
