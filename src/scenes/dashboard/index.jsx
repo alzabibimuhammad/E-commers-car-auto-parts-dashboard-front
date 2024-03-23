@@ -20,6 +20,8 @@ const Dashboard = () => {
 
   const [posts, setPosts] = useState([])
 
+  
+
   useEffect(() => {
     fetch("http://127.0.0.1:8000/api/count")
     .then((response) => response.json())

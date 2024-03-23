@@ -27,7 +27,6 @@ const Login = () => {
   const worksWithAuthAdmin=()=>{
       http.post('/me').then((res)=>{
         setPosts(res.data)
-        window.location.reload()
         navigate('/dashboard')
       });  
   };
